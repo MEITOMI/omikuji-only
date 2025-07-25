@@ -3,23 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>おみくじアプリ</title>
+  <title>おみくじ</title>
   <link rel="stylesheet" href="omikuji.css" />
 </head>
 <body>
   <h1>おみくじアプリ</h1>
-  <label for="nameInput">あなたの名前を入力してね：</label><br>
-  <input type="text" id="nameInput" placeholder="例：めい" />
-  <br><br>
-  <button id="drawBtn">おみくじを引く</button>
-  <button id="resetBtn">履歴をリセット</button>
+  <input type="text" id="nameInput" placeholder="名前を入力" />
+  <button onclick="drawOmikuji()">おみくじを引く</button>
+  <p id="result"></p>
 
-  <h2 id="resultDisplay">今日の運勢を占ってみよう！</h2>
-
-  <h3>🔁 過去の結果</h3>
+  <h2>🔁 過去の結果</h2>
   <ul id="historyList"></ul>
 
-  <h3>🔢 出た回数</h3>
+  <h2>🔢 出た回数</h2>
   <ul id="countList"></ul>
 
   <script src="omikuji.js" defer></script>
